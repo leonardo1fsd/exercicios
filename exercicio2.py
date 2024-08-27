@@ -1,11 +1,8 @@
-
-numero1 = float(input("Digite o primeiro numero: "))
-
-
-numero2 = float(input("Digite o segundo número: "))
-
-
-
-
-
-print(f"O primeiro numero é {numero1} e o segundo é {numero2} ")
+try:
+    dividendo = int(input("digite o dividendo: "))
+    divisor = int(input(" digite o divisor: "))
+    resultado = dividendo/divisor
+except ValueError:
+    print ("numero invalidado")
+except ZeroDivisionError:
+    print("divisao por zero nao permitido")
